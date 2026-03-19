@@ -1,0 +1,92 @@
+[0m23:34:48.260022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF7968AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF8A30850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF8A30670>]}
+
+
+============================== 23:34:48.266021 | 7108b6ae-a7e7-4df9-b6da-54857bc3a4ee ==============================
+[0m23:34:48.266021 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:34:48.267022 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init brazil_orders_pipeline', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:34:48.313536 [debug] [MainThread]: Starter project path: C:\Users\malik\AppData\Roaming\Python\Python310\site-packages\dbt\include\starter_project
+[0m23:34:48.384442 [info ] [MainThread]: 
+Your new dbt project "brazil_orders_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:34:48.385446 [info ] [MainThread]: Setting up your profile.
+[0m23:36:09.229306 [error] [MainThread]: Encountered an error:
+
+[0m23:36:09.284004 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\malik\AppData\Roaming\Python\Python310\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\Users\malik\AppData\Roaming\Python\Python310\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\malik\AppData\Roaming\Python\Python310\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+  File "C:\Users\malik\AppData\Roaming\Python\Python310\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\malik\AppData\Roaming\Python\Python310\site-packages\dbt\task\init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "C:\Users\malik\AppData\Roaming\Python\Python310\site-packages\dbt\task\init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "C:\Users\malik\AppData\Roaming\Python\Python310\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\malik\AppData\Roaming\Python\Python310\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m23:36:09.286010 [debug] [MainThread]: Command `dbt init` failed at 23:36:09.286010 after 81.17 seconds
+[0m23:36:09.287010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF7968AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF8A282E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF8A2A560>]}
+[0m23:36:09.288010 [debug] [MainThread]: Flushing usage events
+[0m23:36:09.869755 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:36:56.324459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021231A48A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021232B10820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021232B10640>]}
+
+
+============================== 23:36:56.328772 | 56b65a5c-57db-4bad-859b-842715348b13 ==============================
+[0m23:36:56.328772 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:36:56.329771 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init brazil_orders_pipeline', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:36:56.362308 [info ] [MainThread]: A project called brazil_orders_pipeline already exists here.
+[0m23:36:56.364328 [debug] [MainThread]: Command `dbt init` succeeded at 23:36:56.364328 after 0.15 seconds
+[0m23:36:56.365325 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021231A48A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021232B119F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021232B10F10>]}
+[0m23:36:56.366330 [debug] [MainThread]: Flushing usage events
+[0m23:36:56.817412 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:37:33.699522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014067108A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140681D07F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140681D0610>]}
+
+
+============================== 23:37:33.703540 | f40c368e-fff8-41bd-a433-269e2ff21535 ==============================
+[0m23:37:33.703540 [info ] [MainThread]: Running with dbt=1.11.6
+[0m23:37:33.705522 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\malik\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init brazil_orders_pipeline', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:37:33.740163 [debug] [MainThread]: Starter project path: C:\Users\malik\AppData\Roaming\Python\Python310\site-packages\dbt\include\starter_project
+[0m23:37:33.765569 [info ] [MainThread]: 
+Your new dbt project "brazil_orders_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:37:33.766582 [info ] [MainThread]: Setting up your profile.
+[0m23:37:39.996593 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m23:37:39.997594 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m23:37:39.998594 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m23:40:26.088322 [info ] [MainThread]: Profile brazil_orders_pipeline written to C:\Users\malik\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m23:40:26.092318 [debug] [MainThread]: Command `dbt init` succeeded at 23:40:26.091319 after 172.51 seconds
+[0m23:40:26.093331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014067108A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014067F8F040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000140681D05B0>]}
+[0m23:40:26.094319 [debug] [MainThread]: Flushing usage events
+[0m23:40:26.898351 [debug] [MainThread]: An error was encountered while trying to flush usage events
